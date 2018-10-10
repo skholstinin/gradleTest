@@ -14,13 +14,11 @@ os:
 
 branches:
   only:
-- develop
+  - develop
 
 before_cashe:
 - rm -f $HOME/.gradle/cashes/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/cashes/*/plugin-resolution/
-
-
 
 cashes:
   directories:
