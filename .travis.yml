@@ -26,6 +26,11 @@ cashes:
   - $HOME/.gradle/cashes/
   - $HOME/.gradle/wrapper/
 
+addons:
+sonarcloud:
+organization: $SONARCLOUD_ORGANIZATION
+  token:
+  secure: $SONARCLOUD_TOKEN
 
 script:
 - ./gradlew assemble
