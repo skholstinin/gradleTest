@@ -59,7 +59,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
         String[] source = getFIleNames();
-        words[0] = "test";
+        words[0] = "computer";
         words[1] = "programmer";
         words[2] = "construction";
         words[3] = "getter";
