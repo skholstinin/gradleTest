@@ -18,11 +18,16 @@ before_cache:
 - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
 - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 
-cache:
+cashes:
   directories:
-  - $HOME/.gradle/caches/
+  - $HOME/.gradle/cashes/
   - $HOME/.gradle/wrapper/
 
+addons:
+sonarcloud:
+organization: $SONARCLOUD_ORGANIZATION
+  token:
+  secure: $SONARCLOUD_TOKEN
 
 script:
 - ./gradlew assemble
