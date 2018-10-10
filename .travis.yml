@@ -12,9 +12,7 @@ jdk:
 os:
 - linux
 
-branches:
-  only:
-  - develop
+
 
 before_cashe:
 - rm -f $HOME/.gradle/cashes/modules-2/modules-2.lock
